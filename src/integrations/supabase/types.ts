@@ -14,45 +14,7 @@ export type Database = {
   }
   public: {
     Tables: {
-      profiles: {
-        Row: {
-          aprovado: boolean
-          aprovado_em: string | null
-          aprovado_por: string | null
-          created_at: string
-          email: string
-          id: string
-          nome_completo: string
-          telefone: string | null
-          updated_at: string
-          user_id: string
-        }
-        Insert: {
-          aprovado?: boolean
-          aprovado_em?: string | null
-          aprovado_por?: string | null
-          created_at?: string
-          email: string
-          id?: string
-          nome_completo: string
-          telefone?: string | null
-          updated_at?: string
-          user_id: string
-        }
-        Update: {
-          aprovado?: boolean
-          aprovado_em?: string | null
-          aprovado_por?: string | null
-          created_at?: string
-          email?: string
-          id?: string
-          nome_completo?: string
-          telefone?: string | null
-          updated_at?: string
-          user_id?: string
-        }
-        Relationships: []
-      }
+      [_ in never]: never
     }
     Views: {
       [_ in never]: never
